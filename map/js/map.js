@@ -41,7 +41,7 @@
           function() {
             tr = '<table border>';
             Object.keys(feature.properties).forEach( function(k){
-              tr = tr + '<tr><td>' + k + '</td><td>' + feature.properties[k] + '</td></tr>';
+              tr = tr + '<tr><td style="white-space: nowrap;">' + k + '</td><td>' + feature.properties[k] + '</td></tr>';
             });
             return tr + '</table>';
           }

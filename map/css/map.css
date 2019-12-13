@@ -47,7 +47,6 @@ html, body {
 .leaflet-popup-content {
   margin: 10px 15px;
   font-size: 13px;
-  white-space: nowrap;
   width: auto !important;
 }
 .thumbnail {
