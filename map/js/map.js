@@ -29,7 +29,8 @@
   newLayer.addTo(map);
 
   var markerclusters = new L.markerClusterGroup({
-    showCoverageOnHover: false
+    showCoverageOnHover: false,
+    maxClusterRadius: 40
   });
   map.addLayer(markerclusters);
 
