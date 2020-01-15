@@ -52,7 +52,7 @@
                 }
               }(feature)),
             iconShape: 'marker',
-            borderColor: '#BBB',
+            borderColor: '#888',
             backgroundColor: '#CCC',
             textColor: '#000'
           })
