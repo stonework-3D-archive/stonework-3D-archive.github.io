@@ -38,6 +38,24 @@
     var modelLayer = L.geoJson(data, {
       pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
+          icon: L.BeautifyIcon.icon({
+            isAlphaNumericIcon: true,
+            text: (function(feat){
+                switch(feat.properties['分類']) {
+                  case '庚申塔': return '申';
+                  case '月待塔': return '月';
+                  case '地神塔': return '地';
+                  case '道祖神': return '塞';
+                  case '道標': return '標';
+                  case '石橋供養塔': return '橋';
+                  default: return '';
+                }
+              }(feature)),
+            iconShape: 'marker',
+            borderColor: '#BBB',
+            backgroundColor: '#CCC',
+            textColor: '#000'
+          })
         }).bindPopup(
           function() {
             tr = '<table border>';
