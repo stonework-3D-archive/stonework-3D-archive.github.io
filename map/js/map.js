@@ -49,7 +49,7 @@
                   case '地神塔': return '地神';
                   case '道祖神': return '塞神';
                   case '道標': return '道標';
-                  case '石橋供養塔': return '石橋';
+                  case '石橋供養塔': return '供養';
                   default: return '';
                 }
               }(feature)),
