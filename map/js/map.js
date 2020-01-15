@@ -41,16 +41,19 @@
           icon: L.BeautifyIcon.icon({
             isAlphaNumericIcon: true,
             text: (function(feat){
-                switch(feat.properties['分類']) {
-                  case '庚申塔': return '申';
-                  case '月待塔': return '月';
-                  case '地神塔': return '地';
-                  case '道祖神': return '塞';
-                  case '道標': return '標';
-                  case '石橋供養塔': return '橋';
+                var str = feat.properties['分類'];
+                var type = str.split(',');
+                switch(type[0].trim()) {
+                  case '庚申塔': return '庚申';
+                  case '月待塔': return '月待';
+                  case '地神塔': return '地神';
+                  case '道祖神': return '塞神';
+                  case '道標': return '道標';
+                  case '石橋供養塔': return '石橋';
                   default: return '';
                 }
               }(feature)),
+            iconSize: [30, 30],
             iconShape: 'marker',
             borderColor: '#888',
             backgroundColor: '#CCC',
