@@ -55,7 +55,8 @@
               }(feature)),
             iconSize: [30, 30],
             iconShape: 'marker',
-            borderColor: '#888',
+            innerIconStyle: 'left: -3px; position: relative;',
+            borderColor: '#AAA',
             backgroundColor: '#CCC',
             textColor: '#000'
           })
