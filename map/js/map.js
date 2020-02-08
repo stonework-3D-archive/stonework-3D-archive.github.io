@@ -50,6 +50,7 @@
                   case '道祖神': return '塞神';
                   case '道標': return '道標';
                   case '石橋供養塔': return '供養';
+                  case '念仏塔': return '念仏';
                   default: return '';
                 }
               }(feature)),
