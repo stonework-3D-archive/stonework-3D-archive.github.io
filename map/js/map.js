@@ -51,6 +51,7 @@
                   case '道標': return '道標';
                   case '石橋供養塔': return '供養';
                   case '念仏塔': return '念仏';
+                  case '狛犬': return '狛犬';
                   default: return '';
                 }
               }(feature)),
