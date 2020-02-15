@@ -52,7 +52,7 @@
                   case '石橋供養塔': return '供養';
                   case '念仏塔': return '念仏';
                   case '狛犬': return '狛犬';
-                  case '猿田彦大神': return '猿田';
+                  case '猿田彦大神塔': return '猿田';
                   default: return '';
                 }
               }(feature)),
