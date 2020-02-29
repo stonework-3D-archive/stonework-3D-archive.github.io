@@ -55,6 +55,7 @@
                   case '猿田彦大神塔': return '猿田';
                   case '橋柱': return '橋柱';
                   case '日支事変記念碑': return '日支';
+                  case '馬頭観音': return '馬頭';
                   default: return '';
                 }
               }(feature)),
