@@ -56,6 +56,7 @@
                   case '橋柱': return '橋柱';
                   case '日支事変記念碑': return '日支';
                   case '馬頭観音': return '馬頭';
+                  case '疱瘡神塔': return '疱瘡';
                   default: return '';
                 }
               }(feature)),
