@@ -7,7 +7,7 @@
 
   // 迅速測図
   var oldLayer = L.tileLayer(
-    'https://aginfo.cgk.affrc.go.jp/ws/ws/tmc/1.0.0/Kanto_Rapid-900913-L/{z}/{x}/{y}.png', {
+    'http://aginfo.cgk.affrc.go.jp/ws/ws/tmc/1.0.0/Kanto_Rapid-900913-L/{z}/{x}/{y}.png', {
        maxNativeZoom: 17,
        opacity: 0.9,
        attribution: '<a href="http://aginfo.cgk.affrc.go.jp/tmc/index.html.ja" target="_blank">農研機構</a>'
