@@ -58,6 +58,7 @@
                   case '馬頭観音': return '馬頭';
                   case '疱瘡神塔': return '疱瘡';
                   case '大日如来塔': return '大日';
+                  case '出羽三山塔': return '出羽';
                   default: return '';
                 }
               }(feature)),
