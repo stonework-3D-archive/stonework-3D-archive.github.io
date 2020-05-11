@@ -59,6 +59,7 @@
                   case '疱瘡神塔': return '疱瘡';
                   case '大日如来塔': return '大日';
                   case '出羽三山塔': return '出羽';
+                  case '聖徳太子塔': return '太子';
                   default: return '';
                 }
               }(feature)),
