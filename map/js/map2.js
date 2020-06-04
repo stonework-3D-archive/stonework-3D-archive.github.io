@@ -61,6 +61,7 @@
                   case '大日如来塔': return '大日';
                   case '出羽三山塔': return '出羽';
                   case '聖徳太子塔': return '太子';
+                  case '御嶽塔': return '御嶽';
                   default: return '';
                 }
               }(feature)),
