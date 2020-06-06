@@ -1,9 +1,26 @@
 ﻿$(function(){
 
-  var map = L.map('mapdiv', {
-    minZoom: 6,
-    maxZoom: 18
-  });
+  var embed = false;
+  var parr=location.search.substring(1).split('&');
+  for(i = 0; i < parr.length; i++) {
+    ppair = parr[i].split('=');
+    if(ppair[0] == 'embed' && ppair[1] == '1') {
+      embed = true;
+    }
+  }
+
+  if( embed ) {
+    var map = L.map('mapdiv', {
+      minZoom: 6,
+      maxZoom: 18,
+      gestureHandling: true
+    });
+  } else {
+    var map = L.map('mapdiv', {
+      minZoom: 6,
+      maxZoom: 18
+    });
+  }
 
   // 迅速測図
   var oldLayer = L.tileLayer(
