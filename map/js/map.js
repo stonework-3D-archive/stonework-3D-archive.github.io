@@ -78,6 +78,7 @@
                   case '出羽三山塔': return '出羽';
                   case '聖徳太子塔': return '太子';
                   case '御嶽塔': return '御嶽';
+                  case '記念碑': return '記念';
                   default: return '';
                 }
               }(feature)),
