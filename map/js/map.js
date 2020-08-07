@@ -79,6 +79,7 @@
                   case '聖徳太子塔': return '太子';
                   case '御嶽塔': return '御嶽';
                   case '記念碑': return '記念';
+                  case '富士講碑': return '富士';
                   default: return '';
                 }
               }(feature)),
