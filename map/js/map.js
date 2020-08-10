@@ -103,6 +103,7 @@
     });
     markerclusters.addLayer(modelLayer);
     map.fitBounds(markerclusters.getBounds());
+    $('#model_count').text(modelLayer.getLayers().length);
   });
 
   L.easyButton('fa fa-info fa-lg',
