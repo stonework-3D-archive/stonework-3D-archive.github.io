@@ -55,40 +55,35 @@
     var modelLayer = L.geoJson(data, {
       pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-          icon: L.BeautifyIcon.icon({
-            isAlphaNumericIcon: true,
-            text: (function(feat){
-                var str = feat.properties['分類'];
-                var type = str.split(',');
-                switch(type[0].trim()) {
-                  case '庚申塔': return '庚申';
-                  case '月待塔': return '月待';
-                  case '地神塔': return '地神';
-                  case '道祖神': return '塞神';
-                  case '道標': return '道標';
-                  case '石橋供養塔': return '供養';
-                  case '念仏塔': return '念仏';
-                  case '狛犬': return '狛犬';
-                  case '猿田彦大神塔': return '猿田';
-                  case '橋柱': return '橋柱';
-                  case '日支事変記念碑': return '日支';
-                  case '馬頭観音': return '馬頭';
-                  case '疱瘡神塔': return '疱瘡';
-                  case '大日如来塔': return '大日';
-                  case '出羽三山塔': return '出羽';
-                  case '聖徳太子塔': return '太子';
-                  case '御嶽塔': return '御嶽';
-                  case '記念碑': return '記念';
-                  case '富士講碑': return '富士';
-                  default: return '';
-                }
-              }(feature)),
-            iconSize: [30, 30],
-            iconShape: 'marker',
-            innerIconStyle: 'left: -3px; position: relative;',
-            borderColor: '#AAA',
-            backgroundColor: '#CCC',
-            textColor: '#000'
+          title:feature.properties['分類'],
+          icon: L.icon({
+            iconAnchor: [14, 40],
+            iconUrl: (function(feat){
+              var str = feat.properties['分類'];
+              var type = str.split(',');
+              switch(type[0].trim()) {
+                case '庚申塔': return 'icon/koshin.png';
+                case '月待塔': return 'icon/tsukimachi.png';
+                case '地神塔': return 'icon/sekijin.png';
+                case '道祖神': return 'icon/dosojin.png';
+                case '道標': return 'icon/dohyo.png';
+                case '石橋供養塔': return 'icon/kuyohi.png';
+                case '念仏塔': return 'icon/kuyohi.png';
+                case '狛犬': return 'icon/stone.png';
+                case '猿田彦大神塔': return 'icon/koshin.png';
+                case '橋柱': return 'icon/stone.png';
+                case '日支事変記念碑': return 'icon/chukonhi.png';
+                case '馬頭観音': return 'icon/bato.png';
+                case '疱瘡神塔': return 'icon/sekijin.png';
+                case '大日如来塔': return 'icon/nyorai.png';
+                case '出羽三山塔': return 'icon/mount.png';
+                case '聖徳太子塔': return 'icon/kuyohi.png';
+                case '御嶽塔': return 'icon/mount.png';
+                case '記念碑': return 'icon/kinenhi.png';
+                case '富士講碑': return 'icon/fujiko.png';
+                default: return 'icon/stone.png';
+              }
+            }(feature))
           })
         }).bindPopup(
           function() {
